@@ -3,7 +3,7 @@
 public class ClickTimer : MonoBehaviour
 {
 
-    [SerializeField] private GameObject Sample = default;
+    //[SerializeField] private GameObject Sample = default;
     [SerializeField] private float clickTime = 0f;
     [SerializeField] private bool isClick = false;
 
