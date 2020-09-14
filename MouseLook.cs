@@ -35,7 +35,7 @@ public class MouseLook : MonoBehaviour
         currentCameraRotationX = Mathf.Clamp(currentCameraRotationX, -cameraRotationLimit, cameraRotationLimit);
 
         Vector3 toRotation = new Vector3(currentCameraRotationX, 0f, 0f);
-        camera.transform.rotation = Quaternion.Lerp(nrot, transform.rotation * Quaternion.Euler(toRotation), 0.5f);
+        camera.transform.rotation = Quaternion.Lerp(nrot, transform.rotation * Quaternion.Euler(toRotation), lerpT);
 
     }
 
