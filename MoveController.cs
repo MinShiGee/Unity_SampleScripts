@@ -29,11 +29,11 @@ public class MoveController : MonoBehaviour
     void Update()
     {
         GetGravity();
+        UpdateInit();
         PlayerMove();
     }
     private void PlayerMove()
     {
-        UpdateInit();
         InputData();
 
         float xInput = Input.GetAxis("Horizontal");
