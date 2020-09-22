@@ -38,7 +38,6 @@ public class Gun : MonoBehaviour
     }
     private void GunInit()
     {
-        shotStartPosition = new Vector3(Camera.main.pixelWidth / 2, Camera.main.pixelHeight / 2, transform.position.z);
 
         curBulletAmount = maxCurBulletAmount;
         curAllBulletAmount = maxCurBulletAmount * magazineAmount;
